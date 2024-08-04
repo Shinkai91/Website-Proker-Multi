@@ -5,90 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UMAMI KEDUKU</title>
+    <link rel="icon" href="Assets/Icon/UMKM.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Rosarivo:ital@0;1&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp 1.5s ease-out;
+        }
+
+        .hover-animate {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-animate:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 
 <body class="bg-[#0B161A] text-white">
     <div class="relative">
         <!-- Background Image -->
-        <div class="relative h-[400px] md:h-[600px] bg-cover bg-center"
+        <div class="relative h-[400px] md:h-[600px] bg-cover bg-center fade-up"
             style="background-image: url('Assets/Background.png');">
             <div class="absolute inset-0 bg-black opacity-60"></div>
             <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-                <h1 class="text-3xl md:text-5xl font-bold">"UMAMI KEDUKU"</h1>
-                <p class="text-lg md:text-2xl mt-2">USAHA MAKANAN & MINUMAN DESA KEDU</p>
-                <p class="text-base md:text-lg mt-1">Desa Kedu, Kecamatan Kedu, Kabupaten Temanggung</p>
+                <p class="text-2xl md:text-5xl fade-up" style="font-family: 'Rowdies', sans-serif; font-weight: 400;">
+                    “UMAMI KEDUKU”
+                </p>
+                <p class="text-xl md:text-4xl fade-up" style="font-family: 'Rowdies', sans-serif; font-weight: 400;">
+                    USAHA MAKANAN & MINUMAN DESA KEDU</p>
+                <p class="text-sm md:text-lg fade-up" style="font-family: 'Rosarivo', cursive; font-weight: 400;">
+                    Desa Kedu, Kecamatan Kedu, Kabupaten Temanggung
+                </p>
             </div>
         </div>
 
-        <!-- Content Section -->
-        <div
-            class="max-w-7xl mx-auto py-10 px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
+        <div class="max-w-7xl mx-auto py-10 px-4 grid grid-cols-3 gap-4">
             <!-- Rumah Kopi Temanggung -->
-            <div class="relative bg-cover bg-center rounded-md" style="background-image: url('Assets/Kopi.jpeg')">
+            <a href="detail_1.html"
+                class="relative block bg-cover bg-center rounded-md h-48 lg:h-44 fade-up hover-animate"
+                style="background-image: url('Assets/Kopi.jpeg');">
                 <div
                     class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white text-center rounded-md">
-                    <img src="Assets/RTK_Logo.png" alt="Logo" class="w-20 mb-4">
-                    <p class="text-xl font-bold">Rumah Kopi Temanggung</p>
+                    <img src="Assets/RTK_Logo.png" alt="Logo" class="w-8 md:w-12 mb-2">
+                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">
+                        Rumah Kopi Temanggung
+                    </p>
                 </div>
-            </div>
+            </a>
 
             <!-- Description Box -->
-            <div class="bg-gray-800 text-white p-6 rounded-lg max-w-sm text-center">
+            <div class="bg-[#141E20] text-white p-4 rounded-lg text-center h-48 lg:h-44 fade-up hover-animate">
                 <div class="flex justify-center">
-                    <div class="w-24 h-24 flex items-center justify-center">
-                        <img src="Assets/UMKM.png" alt="Logo" class="w-20 h-20">
+                    <div class="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                        <img src="Assets/UMKM.png" alt="Logo" class="w-8 md:w-12 h-8 md:h-12">
                     </div>
                 </div>
-                <h1 class="text-lg font-bold mb-2">UMAMI KEDUKU</h1>
-                <p>berkomitmen untuk menciptakan jajanan terbaik dengan cita rasa khas daerah yang telah menjadi
-                    distributor di
-                    berbagai kota di Indonesia.</p>
+                <p class="text-[8px] md:text-base" style="font-family: 'Roboto Flex', sans-serif; font-weight: 100;">
+                    <b>UMAMI KEDUKU</b> berkomitmen untuk menciptakan jajanan terbaik dengan cita rasa khas daerah yang
+                    telah menjadi distributor di berbagai kota di Indonesia.
+                </p>
             </div>
 
             <!-- Emping Jagung Double Winner -->
-            <div class="relative bg-cover bg-center rounded-md"
-                style="background-image: url('Assets/Keripik_Jagung.jpeg')">
+            <a href="detail_2.html"
+                class="relative block bg-cover bg-center rounded-md h-48 lg:h-44 fade-up hover-animate"
+                style="background-image: url('Assets/Keripik_Jagung.jpeg');">
                 <div
                     class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white text-center rounded-md">
-                    <p class="text-xl font-bold">Emping Jagung Double Winner</p>
+                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">
+                        Emping Jagung Double Winner
+                    </p>
                 </div>
-            </div>
+            </a>
 
             <!-- Keripik Tempe Berkah -->
-            <div class="relative bg-cover bg-center rounded-md"
-                style="background-image: url('Assets/Produk_Tempe.jpg')">
+            <a href="detail_3.html"
+                class="relative block bg-cover bg-center rounded-md h-48 lg:h-44 fade-up hover-animate"
+                style="background-image: url('Assets/Produk_Tempe.jpg');">
                 <div
                     class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white text-center rounded-md">
-                    <p class="text-xl font-bold">Keripik Tempe Berkah</p>
+                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">
+                        Keripik Tempe Berkah
+                    </p>
                 </div>
-            </div>
+            </a>
 
             <!-- Intip Barokah (Kerak Nasi) -->
-            <div class="relative bg-cover bg-center rounded-md" style="background-image: url('Assets/Intip.jpeg')">
+            <a href="detail_4.html"
+                class="relative block bg-cover bg-center rounded-md h-48 lg:h-44 fade-up hover-animate"
+                style="background-image: url('Assets/Intip.jpeg');">
                 <div
                     class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white text-center rounded-md">
-                    <p class="text-xl font-bold">Intip Barokah (Kerak Nasi)</p>
+                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">
+                        Intip Barokah (Kerak Nasi)
+                    </p>
                 </div>
-            </div>
+            </a>
 
             <!-- Tahu dan Tempe Gembus -->
-            <div class="relative bg-cover bg-center rounded-md" style="background-image: url('Assets/Tahu.jpeg')">
+            <a href="detail_5.html"
+                class="relative block bg-cover bg-center rounded-md h-48 lg:h-44 fade-up hover-animate"
+                style="background-image: url('Assets/Tahu.jpeg');">
                 <div
                     class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-white text-center rounded-md">
-                    <p class="text-xl font-bold">Tahu dan Tempe Gembus</p>
+                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">
+                        Tahu dan Tempe Gembus
+                    </p>
                 </div>
-            </div>
+            </a>
         </div>
 
         <!-- Footer Section -->
-        <footer class="w-full text-center text-gray-800 py-4 flex justify-center items-center"
-            style="background-color: #EF8B33;">
-            <img src="Assets/TEMANGGUNG.png" alt="Image 1" class="h-8">
-            <img src="Assets/UNDIP.png" alt="Image 2" class="h-8">
-            <p class="text-sm ml-2 text-white"
-                style="font-family: 'Poppins', sans-serif; font-weight: 300; font-style: normal;">TIM KKN II Universitas
-                Diponegoro 2023/2024</p>
+        <footer class="w-full text-center py-4 flex justify-center items-center" style="background-color: #EF8B33;">
+            <img src="Assets/TEMANGGUNG.png" alt="Image 1" class="h-6 md:h-8 fade-up">
+            <img src="Assets/UNDIP.png" alt="Image 2" class="h-6 md:h-8 ml-2 fade-up">
+            <p class="text-xs md:text-sm ml-2 fade-up" style="font-family: 'Roboto Serif', serif; font-weight: 500;">
+                TIM KKN II Universitas Diponegoro 2023/2024
+            </p>
         </footer>
     </div>
 </body>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUMAH KOPI TEMANGGUNG</title>
+    <link rel="icon" href="Assets/Icon/UMKM.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Rosarivo:ital@0;1&family=Rowdies:wght@300;400;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-up {
+            animation: fadeUp 1.5s ease-out;
+        }
+
+        /* Hover Effect */
+        .hover-animate {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-animate:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-[#0B161A] text-white overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="text-center py-4">
+        <p style="font-family: 'Marcellus SC', serif; font-weight: 400; font-style: normal; font-size: 25px;">UMAMI
+            KEDUKU</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <div class="relative h-[400px] md:h-[600px] bg-cover bg-center fade-up"
+            style="background-image: url('Assets/Kopi.jpeg');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+                <img src="Assets/RTK_Logo.png" alt="Rumah Kopi Temanggung Logo" class="w-28 mb-4">
+                <p class="text-sm md:text-lg fade-up" style="font-family: 'Rosarivo', cursive; font-weight: 400;">
+                    Roasted to Perfection</p>
+                <p class="text-xl md:text-4xl fade-up" style="font-family: 'Rowdies', sans-serif; font-weight: 400;">
+                    RUMAH KOPI TEMANGGUNG</p>
+                <p class="text-sm md:text-lg fade-up" style="font-family: 'Rosarivo', cursive; font-weight: 400;">Desa
+                    Kedu, Kecamatan Kedu, Kabupaten Temanggung</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-8">
+        <div class="text-center py-2 fade-up" style="background-color: #4E2C23;">
+            <p class="fade-up"
+                style="font-family: 'Marcellus SC', serif; font-weight: 400; font-style: normal; font-size: 25px;">
+                Tentang Kami</p>
+        </div>
+        <div class="flex justify-center items-center mt-8 px-4 sm:px-0">
+            <div class="grid grid-cols-3 gap-2 sm:gap-4 max-w-5xl w-full py-4 sm:py-8 fade-up">
+                <!-- Left Image -->
+                <div class="flex justify-center fade-up">
+                    <img src="Assets/Kiri.png" alt="Coffee Latte"
+                        class="rounded-lg w-full h-48 sm:w-full sm:h-64 object-cover">
+                </div>
+                <!-- Center Text -->
+                <div
+                    class="flex flex-col justify-center items-center bg-[#141E20] p-2 sm:p-6 rounded-lg text-center fade-up">
+                    <p class="text-[8px] sm:text-base mb-2 sm:mb-6 fade-up"
+                        style="font-family: 'Roboto Flex', sans-serif; font-weight: 100;">
+                        Biji Kopi Terbaik yang Berkualitas
+                    </p>
+                    <h1 class="text-[12px] sm:text-2xl mb-2 sm:mb-3 fade-up"
+                        style="font-family: 'Spectral', serif; font-weight: 500; font-style: normal;">
+                        Sejak Tahun 2015
+                    </h1>
+                    <p class="text-[8px] sm:text-base mb-2 sm:mb-6 fade-up"
+                        style="font-family: 'Roboto Flex', sans-serif; font-weight: 100;">
+                        Berkomitmen menghasilkan kopi berkualitas
+                    </p>
+                    <a href="https://wa.me/6282220040944" target="_blank"
+                        class="bg-[#4E2C23] text-[8px] sm:text-base mb-2 sm:mb-6 py-1 sm:py-2 px-2 sm:px-4 rounded fade-up"
+                        style="font-family: 'Roboto Flex', sans-serif; font-weight: 300;">
+                        Pesan Sekarang
+                    </a>
+                </div>
+                <!-- Right Image -->
+                <div class="flex justify-center fade-up">
+                    <img src="Assets/Kanan.png" alt="Steaming Coffee"
+                        class="rounded-lg w-full h-48 sm:w-full sm:h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="py-8 bg-[#0B161A]">
+        <div class="text-center">
+            <div class="text-center py-2 fade-up" data-aos="fade-down-right" data-aos-duration="1000"
+                style="background-color: #4E2C23;">
+                <p class="fade-up"
+                    style="font-family: 'Marcellus SC', serif; font-weight: 400; font-style: normal; font-size: 25px;">
+                    Katalog</p>
+            </div>
+            <div class="px-4 md:px-8">
+                <div class="grid grid-cols-3 gap-4 mt-6 fade-up">
+                    <a href="https://wa.me/6282220040944?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Arabica%20Sumbing"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Sumbing.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Arabica
+                                        Sumbing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Robusta"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Robusta.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Robusta
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Arabica%20Sindoro"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Sindoro.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Arabica
+                                        Sindoro</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Peaberry%20Robusta"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Peaberry_Robusta.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Peaberry
+                                        Robusta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Kopi%20Lanang%20(Peaberry)"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Peaberry_Arabika.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Kopi
+                                        Lanang (Peaberry)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Arabica%20Luwak"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Kopi_Luwak.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Arabica
+                                        Luwak</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Arabica%20Prau"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Prau.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Arabica
+                                        Prau</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Robusta"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Robusta_Organik.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Robusta
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/6281234567890?text=Saya%20Ingin%20Bertanya%20Tentang%20Produk%20Excelsa"
+                        target="_blank">
+                        <div class="relative fade-up hover-animate" data-aos="fade-down-right" data-aos-duration="1000">
+                            <div class="bg-cover bg-center h-48 rounded-lg"
+                                style="background-image: url('Assets/Katalog/Excelsa.jpg');">
+                                <div
+                                    class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center">
+                                    <p class="text-xs md:text-sm" style="font-family: 'Roboto Serif', serif;">Excelsa
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Section -->
+    <section>
+        <div class="text-center">
+            <div class="text-center py-2 fade-up" data-aos="fade-down-right" data-aos-duration="1000"
+                style="background-color: #4E2C23;">
+                <p class="fade-up"
+                    style="font-family: 'Marcellus SC', serif; font-weight: 400; font-style: normal; font-size: 25px;">
+                    Produk Lainnya</p>
+            </div>
+            <div class="relative fade-up" data-aos="fade-down-right" data-aos-duration="1000">
+                <img src="Assets/Harga.png" alt="Price List" class="mx-auto mt-6 mb-6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-8 bg-[#141E20]">
+        <div class="container mx-auto p-6">
+            <!-- Contact Info and Social Media -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-up" data-aos="fade-down-right"
+                data-aos-duration="1000">
+                <!-- Contact Info -->
+                <div class="space-y-4 fade-up" data-aos="fade-down-right" data-aos-duration="1000">
+                    <!-- Phone -->
+                    <div class="flex items-center">
+                        <img src="Assets/Icon/Wa.png" alt="Phone Icon" class="w-6 h-6 md:w-8 md:h-8 mr-3 md:mr-4">
+                        <span class="text-sm md:text-lg font-light">+62 822 2004 0944</span>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="flex items-center">
+                        <img src="Assets/Icon/Ig.png" alt="Instagram Icon" class="w-6 h-6 md:w-8 md:h-8 mr-3 md:mr-4">
+                        <span class="text-sm md:text-lg font-light">@temanggungcoffee</span>
+                    </div>
+                    <!-- Email -->
+                    <div class="flex items-center">
+                        <img src="Assets/Icon/Email.png" alt="Email Icon" class="w-6 h-6 md:w-8 md:h-8 mr-3 md:mr-4">
+                        <span class="text-sm md:text-lg font-light">rumahkopitmg@gmail.com</span>
+                    </div>
+                    <!-- Address -->
+                    <div class="flex items-center">
+                        <img src="Assets/Icon/Lokasi.png" alt="Address Icon"
+                            class="w-6 h-7 md:w-8 md:h-10 mr-3 md:mr-4">
+                        <span class="text-xs md:text-lg font-light">Irawanan No 3 RT 01/04 Desa Kedu Kecamatan Kedu
+                            Kabupaten Temanggung 56252</span>
+                    </div>
+                </div>
+                <!-- Social Media & Logo -->
+                <div class="flex flex-col items-center space-y-2 fade-up" data-aos="fade-down-right"
+                    data-aos-duration="1000">
+                    <!-- Icon Group (Horizontal) -->
+                    <div class="flex space-x-2 md:space-x-4 fade-up" data-aos="fade-down-right"
+                        data-aos-duration="1000">
+                        <a href="https://shopee.co.id/kopitemanggung" target="_blank">
+                            <img src="Assets/Icon/Shopee.png" alt="Shop Icon" class="w-8 h-8 md:w-10 md:h-10">
+                        </a>
+                        <a href="https://www.tokopedia.com/rumahkopitmg" target="_blank">
+                            <img src="Assets/Icon/tokopedia.png" alt="Tokopedia Icon" class="w-8 h-8 md:w-10 md:h-10">
+                        </a>
+                        <a href="https://www.blibli.com/brand/rumah-kopi-temanggung" target="_blank">
+                            <img src="Assets/Icon/blibli.png" alt="Blibli Icon" class="w-8 h-8 md:w-10 md:h-10">
+                        </a>
+                        <a href="https://m.bukalapak.com/u/dobelden" target="_blank">
+                            <img src="Assets/Icon/bukalapak.png" alt="Bukalapak Icon" class="w-8 h-8 md:w-10 md:h-10">
+                        </a>
+                    </div>
+                    <!-- Text Below Icons -->
+                    <p class="text-xs md:text-sm font-light">RUMAH KOPI TEMANGGUNG</p>
+                </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="mt-8 flex justify-center fade-up" data-aos="fade-down-right" data-aos-duration="1000">
+                <div class="w-full h-0 pb-[56.25%] relative">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63324.95772088379!2d110.1212716038008!3d-7.262468341004653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70783244c53001%3A0xaf2546b5f62fa2b4!2sRumah%20Kopi%20Temanggung!5e0!3m2!1sid!2sid!4v1722745685915!5m2!1sid!2sid"
+                        class="absolute top-0 left-0 w-full h-full border-0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full text-center text-gray-800 py-4 flex justify-center items-center"
+        style="background-color: #4E2C23;">
+        <img src="Assets/TEMANGGUNG.png" alt="Image 1" class="h-6 md:h-8 fade-up">
+        <img src="Assets/UNDIP.png" alt="Image 2" class="h-6 md:h-8 ml-2 fade-up">
+        <p class="text-xs md:text-sm ml-2 fade-up"
+            style="font-family: 'Roboto Serif', serif; font-weight: 500; color: white;">
+            TIM KKN II Universitas Diponegoro 2023/2024
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
